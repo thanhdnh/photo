@@ -1,0 +1,155 @@
+#btsearch:hover, #btprev:hover, #btnext:hover{
+	color:#43eaff;
+}
+#logo{
+	width:48px;
+	height:48px;
+	display:inline-block;
+	background-image:url('logo.png');
+	border-radius:30px;
+	background-size:42px 42px;
+	background-color:gray;
+	padding:3px;
+	background-repeat:no-repeat;
+	background-origin:content-box;
+	cursor:pointer;
+	bottom:60px;
+	left:230px;
+	margin:0px 5px;
+}
+#logo:hover{
+	background-color:orange;
+}
+#formsearch{
+	text-align:center;
+	padding:5px;
+	margin-bottom:10px;
+	background-color:rgb(50, 50, 50);
+	color:white;
+}
+#footer{
+	background-color:rgb(50, 50, 50);
+	padding:0px 5px 5px 5px;
+	margin-top:10px;
+	text-align:center;
+	color:white;
+	line-height:50px;
+}
+#footer input{
+	margin-top:0px;
+}#footer input:focus{
+	outline:none;
+}
+#txtsearch{
+	width:90%;
+	background-color:rgba(255, 255, 255, .1);
+}
+#txtsearch:focus{
+	background-color:white;
+	color:black;
+}
+#formsearch{
+	padding:10px;
+}
+#searchresult{
+	text-align:center;
+	margin-top:80px;
+	margin-bottom:120px;
+}
+#searchresult img{
+	height:150px;
+	border:5px #03A9F4 solid;
+	border-radius:20px;
+	margin:5px;
+	cursor:pointer;
+	opacity:.8;
+}
+
+#image_show{
+	text-align:center;
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color:rgba(0, 0, 0, 0.8);
+	top:0px;
+	left:0px;
+	visibility:hidden;
+	z-index:9990;
+}
+
+#image_show span{
+	font-size:10pt;
+	cursor:pointer;
+	color:white;
+}
+
+#image_show p{
+	position:fixed;
+	top:0px;
+	right:5px;
+	z-index:9998;
+	color:white;
+	padding:0px 10px;
+}
+
+#btdownload a:link, #btdownload a:visited, #btdownload a:hover{
+	color:white !important;
+}
+
+#image_show span:hover, #btdownload a:hover{
+	text-decoration:underline !important;
+}
+
+.container, .container-fluid, .col{
+	width:100% !important;
+}
+
+#searchresult img:hover{
+	opacity:1;
+	border-color:violet;
+}
+#footer span a{
+	display:inline-block;
+	width:100%;
+	height:100%;
+}
+#loading{
+	position:fixed;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	background-color:rgba(255, 255, 255, .8);
+	z-index:9999;
+}
+#loading div{
+	margin-top:10%;
+	margin-left:20%;
+	width:376px;
+	height:376px;
+	background-origin:content-box;
+	background-image:url('loading.gif');
+	background-repeat:no-repeat;
+	background-size:256px 256px;
+	image-rendering:optimizeQuality;
+	padding:60px;
+	opacity:.7;
+}
+
+#img_zoom{
+	position:fixed;
+	bottom:5px;
+	right:0px;
+	padding:0px;
+	width:100%;
+}
+#ex1Slider .slider-selection {
+	background: #BABABA;
+}
+#ex1Slider{
+	position:fixed;
+	width:95%;
+	left:5px;
+	bottom:5px;
+	margin:0px 10px;
+}
