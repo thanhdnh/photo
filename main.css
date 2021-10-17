@@ -130,10 +130,10 @@
 	background-origin:content-box;
 	background-image:url('loading.gif');
 	background-repeat:no-repeat;
-	background-size:256px 256px;
+	background-size:189px 191px;
 	image-rendering:optimizeQuality;
 	padding:60px;
-	opacity:.7;
+	opacity:.7;opacity: .8;
 }
 
 #img_zoom{
