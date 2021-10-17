@@ -1,7 +1,8 @@
 <html>
+
 <head>
-	<title>PhotoFinder: search high quality photo by topics and use them for social networks</title>
-	<meta name="description" content="PhotoFinder is a tool that allows you search all high quality photos by many search topics. PhotoFinder is a product of HTCom and cooperates with emojiSelector."> 
+	<title>FotoSearch: Provide awesome and high quality photos</title>
+	<meta name="description" content="FotoSearch: Provide awesome and high quality photos">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="cache-control" content="max-age=0" />
 	<meta http-equiv="cache-control" content="no-cache" />
@@ -14,37 +15,64 @@
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="bootstrap/bootstrap-slider.min.css">
 </head>
-<body class="rtl" style='min-width:500px'>
+
+<body class="">
 	<div class='container-fluid'>
-		<div id='formsearch' class='navbar-fixed-top row'>
-			<div class='col-md'><input class="form-control-lg navbar-toggler" type='text' id='txtsearch' value='flowers'></div>
+		<div class="row bg-dark navbar-fixed-top" style="text-align: center;">
+			<input class="navbar-toggler col" type='text' id='txtsearch' value='flowers' style="width:90%; margin-top:8px;">
+			<div class="col btn-group">
+				<span class="btn">iPhone Wallpaper</span>
+				<span class="btn">Sunset</span>
+				<span class="btn">Nature</span>
+				<span class="btn">Wallpaper</span>
+				<span class="btn">Sport</span>
+				<span class="btn">Sea</span>
+				<span class="btn">Snow</span>
+				<span class="btn">Autumn</span>
+				<span class="btn">Beach</span>
+			</div>
 		</div>
+		<!--<div id='formsearch' class='navbar navbar-fixed-top row'>
+			<div class='nav-item col-10'><input class="form-control-lg navbar-toggler" type='text' id='txtsearch'
+					value='flowers'></div>
+			<div class='nav-item col-2'><span class="">About</span></div>
+		</div>-->
 		<div class='row'>
-			<div id='searchresult' class='col-md'></div>
+			<div id='searchresult' class='col'></div>
 		</div>
-	</div>
-	<div class='container-fluid'>
+
 		<div class='navbar-fixed-bottom row' id='footer'>
-			<div class='col-md'>
+			<div class='col'>
 				<input class="form-control-lg navbar-toggler" type='button' id='btprev' value='&laquo; Previous'>
-				<span id='logo'><a class="nav-link link"  target='_blank' href='https://sites.google.com/view/crx/home'>&nbsp;</a></span>
+				<span id='logo'><a class="nav-link link" target='_blank'
+						href='https://sites.google.com/view/crx/home'>&nbsp;</a></span>
 				<input class="form-control-lg navbar-toggler" type='button' id='btnext' value='Next &raquo;'>
-				<p style='font-size:12px;color:lime;line-height:15px;margin-top:5px;'>PhotoFinder&copy; is a product of <a class='nav-link link' href='mailto:myhoangthanh@yahoo.com'>HTCom</a>. PhotoFinder&copy; queries data from multiple resources. We don't store anything on our server.<br>Copyright 2021 as partner of <a class='link nav-link' target='_blank' href='https://thanhdnh.github.io/photo/'>Photo Comment</a></p>
+				<!-- <p style='font-size:12px;color:lime;line-height:15px;margin-top:5px;'>PhotoFinder&copy; is a product of
+					<a class='nav-link link' href='mailto:myhoangthanh@yahoo.com'>HTCom</a>. PhotoFinder&copy; queries
+					data from multiple resources. We don't store anything on our server.<br>Copyright 2021 as partner of
+					<a class='link nav-link' target='_blank' href='https://thanhdnh.github.io/photo/'>Photo Comment</a>
+				</p> -->
 			</div>
 		</div>
 	</div>
-	
-	<div id='loading'><div></div><br><h1 class="loading_title">Loading...</h1></div>
-	<div id='image_show'>
-		<p><span id='btdownload'><a target="_blank" class="nav-link link" download="alternate-filename.png">Download</a></span> | <span class="nav-link link" id='btclose'>Close</span><br></p>
-		<img id='img_viewer' style='height:100%;'>
-		<input id="img_zoom" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100" data-slider-step="1" data-slider-value="100"/>
+
+	<div id='loading'>
+		<div></div><br>
+		<h1 class="loading_title">Loading...</h1>
 	</div>
-	
+	<div id='image_show'>
+		<p><a id='btdownload' target="_blank" class="nav-link" download="alternate-filename.png">Download</a> |
+			<span class="nav-link" id='btclose'>Close</span><br></p>
+		<img id='img_viewer' style='height:100%;'>
+		<input id="img_zoom" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100"
+			data-slider-step="1" data-slider-value="100" />
+	</div>
+
 	<script src='jquery.min.js'></script>
 	<script src='bootstrap/tether.min.js'></script>
 	<script src='bootstrap/bootstrap.min.js'></script>
 	<script src='bootstrap/bootstrap-slider.min.js'></script>
 	<script src='photofinder.js'></script>
 </body>
+
 </html>
