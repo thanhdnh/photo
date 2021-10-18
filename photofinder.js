@@ -117,7 +117,7 @@ function writeData(keyword, page) {
 
 	for (var i = 0; i < perpage; i++) {
 		//console.log(i);
-		$('<img style=\'object-fit: cover;\' class=\'col-12 col-md-2\' id=\'img_' + i + '\' onclick="showLoading(\'img_' + i + '\')" title=\'' + json.photos.photo[i].title + '\' src=\'https://c1.staticflickr.com/' + json.photos.photo[i].farm + '/' + json.photos.photo[i].server + '/' + json.photos.photo[i].id + '_' + json.photos.photo[i].secret + '.jpg\'>').load(function () {
+		$('<img style=\'object-fit: contain;\' class=\'col-12 col-md-2\' id=\'img_' + i + '\' onclick="showLoading(\'img_' + i + '\')" title=\'' + json.photos.photo[i].title + '\' src=\'https://c1.staticflickr.com/' + json.photos.photo[i].farm + '/' + json.photos.photo[i].server + '/' + json.photos.photo[i].id + '_' + json.photos.photo[i].secret + '.jpg\'>').load(function () {
 			$(this).appendTo('#searchresult');
 			$('#loading').css('visibility', 'hidden');
 		});
