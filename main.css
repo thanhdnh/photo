@@ -35,9 +35,6 @@ html, body{
 	background-repeat:no-repeat;
 	background-origin:content-box;
 	cursor:pointer;
-	bottom:60px;
-	left:230px;
-	margin:5px 5px 0px 5px;
 }
 #logo:hover{
 	background-color:orange;
@@ -53,18 +50,20 @@ html, body{
 	background-color:rgb(50, 50, 50);
 }
 #footer{
-	background-color:rgb(50, 50, 50);
 	padding:0px 5px 5px 5px;
 	margin-top:10px;
 	text-align:center;
 	color:white;
-	line-height:50px;
 }
 #footer input{
 	margin-top:0px;
 	font-size: 14px;
+	width:100px;
 }#footer input:focus{
 	outline:none;
+}
+#footer input, #footer span{
+	background-color:rgb(50,50,50, .9);
 }
 #txtsearch{
 	background-color:rgba(255, 255, 255, .1);
@@ -86,9 +85,9 @@ html, body{
 }
 #searchresult img{
 	height:150px;
-	border:2px #007db8 solid;
+	/*border:1px #6e6e6e solid;*/
 	border-radius:5px;
-	margin:5px;
+	margin:10px;
 	cursor:pointer;
 	opacity:.8;
 }
@@ -181,15 +180,17 @@ html, body{
 	color:aqua;
 }
 .btn{color:#43eaff; font-size: 12px;}
+.btn:hover{color:antiquewhite;}
 #btdownload, #btclose{
 	background-color:#0c54c1;
 	padding:3px 5px;
 	text-align: center;
 	border-radius: 3px;
-	font-size: 12px;
+	font-size: 12px !important;
 	color:white !important;
 }
 #btdownload:hover, #btclose:hover{
 	text-decoration: underline !important;
 	cursor: pointer;
 }
+#footer input{color:aqua;}

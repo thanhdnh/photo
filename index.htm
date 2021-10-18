@@ -10,7 +10,7 @@
 	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
 	<meta http-equiv="pragma" content="no-cache" />
 	<link rel="shortcut icon" href="logo.png" type="image/x-icon">
-	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/bootstrap4.min.css">
 	<link rel="stylesheet" href="bootstrap/tether.min.css">
 	<link rel="stylesheet" href="main.css">
 	<link rel="stylesheet" href="bootstrap/bootstrap-slider.min.css">
@@ -18,18 +18,19 @@
 
 <body class="">
 	<div class='container-fluid'>
-		<div class="row bg-dark navbar-fixed-top" style="text-align: center;">
-			<input class="navbar-toggler col" type='text' id='txtsearch' value='flowers' style="width:90%; margin-top:8px;">
-			<div class="col btn-group">
-				<span class="btn">iPhone Wallpaper</span>
-				<span class="btn">Sunset</span>
-				<span class="btn">Nature</span>
-				<span class="btn">Wallpaper</span>
-				<span class="btn">Sport</span>
-				<span class="btn">Sea</span>
+		<div class="row bg-dark fixed-top" style="text-align: center; padding:3px 0px 3px 20px;">
+			<input class="navbar-toggler col col-md-5" type='text' id='txtsearch' value='flowers' style="font-size:14px;">
+			<div class="col col-md-7 btn-group">
+				<span class="btn">iPhone wallpaper</span>
+				<span class="btn d-none d-md-block">Sunset</span>
+				<span class="btn d-none d-md-block">Nature</span>
+				<span class="btn d-none d-md-block">Wallpaper</span>
+				<span class="btn d-none d-md-block">Sport</span>
+				<span class="btn d-none d-md-block">Sea</span>
 				<span class="btn">Snow</span>
 				<span class="btn">Autumn</span>
 				<span class="btn">Beach</span>
+				<span class="btn d-none d-md-block">4K</span>
 			</div>
 		</div>
 		<!--<div id='formsearch' class='navbar navbar-fixed-top row'>
@@ -41,7 +42,7 @@
 			<div id='searchresult' class='col'></div>
 		</div>
 
-		<div class='navbar-fixed-bottom row' id='footer'>
+		<div class='fixed-bottom row' id='footer'>
 			<div class='col'>
 				<input class="form-control-lg navbar-toggler" type='button' id='btprev' value='&laquo; Previous'>
 				<span id='logo'><a class="nav-link link" target='_blank'
@@ -61,8 +62,8 @@
 		<h1 class="loading_title">Loading...</h1>
 	</div>
 	<div id='image_show'>
-		<p><a id='btdownload' target="_blank" class="nav-link" download="alternate-filename.png">Download</a> |
-			<span class="nav-link" id='btclose'>Close</span><br></p>
+		<p class="navbar"><a id='btdownload' target="_blank" class="nav nav-link" download="alternate-filename.png">Download</a>&nbsp;|&nbsp;
+			<span class="nav nav-link" id='btclose'>Close</span><br></p>
 		<img id='img_viewer' style='height:100%;'>
 		<input id="img_zoom" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="100"
 			data-slider-step="1" data-slider-value="100" />
