@@ -71,7 +71,7 @@ html, body{
 	border:none;
 }
 #txtsearch:focus{
-	background-color:white;
+	background-color:rgba(255, 255, 255, 0.8);
 	color:black;
 	border:none;
 }
@@ -87,7 +87,7 @@ html, body{
 	height:150px;
 	/*border:1px #6e6e6e solid;*/
 	border-radius:5px;
-	margin:10px;
+	margin:10px 0px;
 	cursor:pointer;
 	opacity:.8;
 }
@@ -130,6 +130,7 @@ html, body{
 #searchresult img:hover{
 	opacity:1;
 	border-color:rgb(224, 0, 224);
+	transform: scale(1.1);
 }
 #footer span a{
 	display:inline-block;
