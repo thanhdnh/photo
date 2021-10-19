@@ -147,7 +147,7 @@ html, body{
 	z-index:9999;
 	padding:15% calc(50% - 90px);
 }
-#loading div{
+/* #loading div{
 	width:376px;
 	height:376px;
 	background-origin:content-box;
@@ -157,7 +157,7 @@ html, body{
 	image-rendering:optimizeQuality;
 	padding:0px;
 	opacity:.7;opacity: .8;
-}
+} */
 
 #img_zoom{
 	position:fixed;
@@ -179,6 +179,7 @@ html, body{
 }
 .loading_title{
 	color:aqua;
+	margin-top: 20px;
 }
 .btn{color:#43eaff; font-size: 12px;}
 .btn:hover{color:antiquewhite;}
